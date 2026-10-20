@@ -12,7 +12,9 @@ app = FastAPI(
     version="1.0.0",
     description="Offline-First Central Database Sync for National Welfare Savings App"
 )
-
+@app.get("/")
+def home():
+    return {"status": "success", "message": "Backend is running live on Vercel!"}
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
