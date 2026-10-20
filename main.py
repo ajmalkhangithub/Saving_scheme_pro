@@ -5,7 +5,7 @@ from typing import List, Optional
 import sqlite3
 from datetime import datetime
 
-DATABASE_FILE = "central_welfare.db"
+DATABASE_FILE = "/tmp/central_welfare.db"
 
 app = FastAPI(
     title="Welfare Scheme Synchronization Engine",
